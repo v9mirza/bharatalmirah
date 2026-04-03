@@ -47,5 +47,26 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  // Hide sticky mobile CTA while user is typing to avoid covering controls.
+  if (body.classList.contains("has-mobile-cta")) {
+    const isFormControl = (el) => {
+      if (!el) return false;
+      return (
+        el.matches("input, textarea, select") ||
+        el.isContentEditable === true
+      );
+    };
+
+    document.addEventListener("focusin", (event) => {
+      if (isFormControl(event.target)) {
+        body.classList.add("mobile-cta-hidden");
+      }
+    });
+
+    document.addEventListener("focusout", () => {
+      body.classList.remove("mobile-cta-hidden");
+    });
+  }
 });
 
