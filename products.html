@@ -49,7 +49,7 @@
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -59,237 +59,314 @@
   </head>
   <body class="has-mobile-cta">
     <div class="page">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar-inner">
+            <span>✨ Premium & Elegant Designs</span>
+            <span>⭐ 10-Year Assured Warranty</span>
+            <span>🛡️ Heavy-Duty Steel Built</span>
+            <span>🤝 50,000+ Happy Customers</span>
+          </div>
+        </div>
+      </div>
+
       <header class="navbar">
-        <div class="container navbar-inner">
-          <a
-            href="index.html"
-            class="brand"
-          >
-            <span class="brand-logo">BA</span>
-            <span class="brand-text">
-              <span class="brand-title">Bharat Almirah</span>
-              <span class="brand-subtitle">हर भारतीय की पसंद - भारत अलमारी</span>
+        <div class="container navbar-inner" style="justify-content: center;">
+          <nav class="nav-links" aria-label="Primary Left" style="flex: 1; justify-content: flex-end; padding-right: 2rem;">
+            <a href="index.html">HOME</a>
+            <a href="about.html">WHO WE ARE</a>
+            <a href="products.html" class="nav-active">OUR PRODUCTS</a>
+          </nav>
+
+          <a href="index.html" class="brand" style="flex: 0 0 auto; text-align: center; justify-content: center;">
+            <span class="brand-text" style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
+              <span style="font-family: 'Playfair Display', serif; font-size: clamp(0.95rem, 3.8vw, 1.6rem); font-weight: 700; line-height: 1; white-space: nowrap;"><span style="color: var(--color-primary);">Bharat</span> <span style="color: var(--color-text);">Almirah</span></span>
+              <span style="text-transform: uppercase; font-size: 0.52rem; letter-spacing: 0.18em; color: var(--color-primary); font-weight: 700;">ISO 9001:2015 Certified</span>
             </span>
           </a>
 
-          <nav class="nav-links" aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a
-              href="products.html"
-              class="nav-active"
-              >Products</a
-            >
-            <a href="contact.html">Contact</a>
-            <a
-              href="https://wa.me/919936512207"
-              class="nav-whatsapp"
-              target="_blank"
-              rel="noopener"
-              >WhatsApp Inquiry</a
-            >
+          <nav class="nav-links" aria-label="Primary Right" style="flex: 1; justify-content: flex-start; padding-left: 2rem; align-items: center;">
+            <a href="contact.html">CONTACT US</a>
+            <a href="dealership.html" style="background-color: #cd091f; color: #fff; padding: 0.6rem 1.4rem; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-left: 1rem; border: 1px solid #cd091f; text-decoration: none; display: inline-block;">GET DEALERSHIP</a>
           </nav>
 
-          <button
-            class="nav-toggle"
-            type="button"
-            aria-label="Toggle navigation"
-          >
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation">
             <span></span>
           </button>
         </div>
       </header>
 
       <main>
-        <section id="brochure-gallery">
-          <div class="container">
-            <div class="section-heading">
-              <h1>Brochure Photo Gallery</h1>
-              <p>
-                Added screenshots from the latest Bharat Almirah brochure for
-                quick visual reference.
-              </p>
-            </div>
-            <div class="mt-lg">
-              <a
-                href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf"
-                class="btn btn-primary"
-                target="_blank"
-                rel="noopener"
-                download="Bharat-Almirah-Brochure.pdf"
-                >Download Full Brochure (PDF)</a
-              >
-            </div>
-            <div class="gallery-grid">
-              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 1">
-                <img
-                  src="/assets/images/brochure-shot-01.png"
-                  alt="Bharat Almirah brochure screenshot 1"
-                />
-              </button>
-              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 2">
-                <img
-                  src="/assets/images/brochure-shot-02.png"
-                  alt="Bharat Almirah brochure screenshot 2"
-                />
-              </button>
-              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 3">
-                <img
-                  src="/assets/images/brochure-shot-03.png"
-                  alt="Bharat Almirah brochure screenshot 3"
-                />
-              </button>
-              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 4">
-                <img
-                  src="/assets/images/brochure-shot-04.png"
-                  alt="Bharat Almirah brochure screenshot 4"
-                />
-              </button>
-              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 5">
-                <img
-                  src="/assets/images/brochure-shot-05.png"
-                  alt="Bharat Almirah brochure screenshot 5"
-                />
-              </button>
-              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 6">
-                <img
-                  src="/assets/images/brochure-shot-06.png"
-                  alt="Bharat Almirah brochure screenshot 6"
-                />
-              </button>
-              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 7">
-                <img
-                  src="/assets/images/brochure-shot-07.png"
-                  alt="Bharat Almirah brochure screenshot 7"
-                />
-              </button>
-              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 8">
-                <img
-                  src="/assets/images/brochure-shot-08.png"
-                  alt="Bharat Almirah brochure screenshot 8"
-                />
-              </button>
+
+        <!-- ─── HERO ─────────────────────────────────────────────── -->
+        <section style="background: linear-gradient(rgba(10,10,10,0.80), rgba(10,10,10,0.80)), url('assets/images/home.jpeg') center/cover no-repeat; padding: 7rem 1rem 6rem; text-align: center; color: #fff;">
+          <div class="container" style="max-width: 720px; margin: 0 auto;">
+            <p style="text-transform: uppercase; letter-spacing: 4px; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 1rem;">Our Collection</p>
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 400; color: #fff; margin-bottom: 1.5rem; line-height: 1.2;">Premium Steel <em>Almirahs</em></h1>
+            <p style="color: #bbb; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2.5rem;">Engineered for security, designed for elegance. From compact home wardrobes to heavy-duty institutional lockers — built to last.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+              <a href="#gallery" style="display: inline-block; background: var(--color-primary); color: #fff; padding: 0.9rem 2rem; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-decoration: none; text-transform: uppercase;">View Lookbook</a>
+              <a href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf" target="_blank" rel="noopener" download="Bharat-Almirah-Brochure.pdf" style="display: inline-block; background: transparent; color: #fff; padding: 0.9rem 2rem; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; text-decoration: none; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.4);">Download Brochure</a>
             </div>
           </div>
         </section>
 
-        <section>
+        <!-- ─── PRODUCT FEATURES STRIP ────────────────────────────── -->
+        <section style="background: var(--color-primary); padding: 2.5rem 0;">
           <div class="container">
-            <div class="section-heading">
-              <h2>Complete Product Listing</h2>
-              <p>
-                Model-wise dimensions, features, and use-cases from the Bharat
-                Almirah brochure.
-              </p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.5rem; text-align: center;">
+              <div style="color: #fff;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.4rem;">🛡️</div>
+                <div style="font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">10-Year Warranty</div>
+              </div>
+              <div style="color: #fff;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.4rem;">⚙️</div>
+                <div style="font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">High-Grade CRCA Steel</div>
+              </div>
+              <div style="color: #fff;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.4rem;">🔒</div>
+                <div style="font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">Advanced Locking</div>
+              </div>
+              <div style="color: #fff;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.4rem;">🎨</div>
+                <div style="font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">Powder Coated Finish</div>
+              </div>
+              <div style="color: #fff;">
+                <div style="font-size: 1.4rem; margin-bottom: 0.4rem;">📦</div>
+                <div style="font-weight: 700; font-size: 0.85rem; letter-spacing: 1px; text-transform: uppercase;">Pan India Delivery</div>
+              </div>
             </div>
-            <div class="values-grid">
-              <article class="value-card">
-                <h3 class="value-title">Classic Model</h3>
-                <p><strong>Size:</strong> 78 x 33 x 19 inches</p>
-                <p><strong>Features:</strong> Border box, side + big locker, hanger rod, bangle rod, leveling leg adjuster.</p>
-                <p><strong>Ideal for:</strong> Small families and budget buyers.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Galaxy 19</h3>
-                <p><strong>Size:</strong> 78 x 36 x 19</p>
-                <p><strong>Features:</strong> Wider body than Classic with the same core features and better storage capacity.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Galaxy Wardrobe</h3>
-                <p><strong>Size:</strong> 78 x 36 x 21</p>
-                <p><strong>Features:</strong> Coat hanger rod, side + big locker, number lock system, bangle rod, adjustable legs.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Galaxy Partition</h3>
-                <p><strong>Size:</strong> 78 x 36 x 21</p>
-                <p><strong>Features:</strong> Partitioned compartments, side + big locker, number lock, coat hanger.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Galaxy Ford</h3>
-                <p><strong>Size:</strong> 78 x 36 x 21</p>
-                <p><strong>Features:</strong> Multi-section layout, side locker, number lock, coat hanger, bangle rod.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Deluxe Drawer</h3>
-                <p><strong>Size:</strong> 78 x 42 x 21</p>
-                <p><strong>Features:</strong> Drawer included, side + big locker, coat hanger, number lock, bangle rod.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Deluxe Queen</h3>
-                <p><strong>Size:</strong> 78 x 42 x 21</p>
-                <p><strong>Features:</strong> Mirror door, 4 drawers, side + big locker, coat hanger, number lock.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Ruby 3 Door</h3>
-                <p><strong>Size:</strong> 78 x 48 x 21</p>
-                <p><strong>Features:</strong> 3-door layout, 2 big lockers, mirror door, coat hanger, number lock, bangle rod.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Bharat 3 Door</h3>
-                <p><strong>Size:</strong> 78 x 48 x 21</p>
-                <p><strong>Features:</strong> Mirror door, 3 drawers, 2 big lockers, coat hanger, number lock.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Office Locker</h3>
-                <p><strong>Sizes:</strong> 78 x 33 x 19, 78 x 36 x 19</p>
-                <p><strong>Features:</strong> 5 shelves, big locker, leveling leg adjuster.</p>
-                <p><strong>Use case:</strong> Office file and document storage.</p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Office Mini</h3>
-                <p><strong>Size:</strong> 48 x 33 x 19</p>
-                <p><strong>Features:</strong> Compact design, 3 shelves, big locker, adjustable legs.</p>
-              </article>
+          </div>
+        </section>
+
+        <!-- ─── LOOKBOOK GALLERY ───────────────────────────────────── -->
+        <section id="gallery" style="background: #fff; padding: 6rem 0;">
+          <div class="container">
+            <div style="text-align: center; margin-bottom: 3.5rem;">
+              <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.8rem;">Visual Reference</p>
+              <h2 style="font-family: 'Playfair Display', serif; font-size: 2.4rem; color: #111; font-weight: 400; margin-bottom: 1rem;">The <em>Lookbook</em></h2>
+              <p style="color: #666; max-width: 550px; margin: 0 auto 2rem; font-size: 1rem; line-height: 1.7;">Visual reference from our latest production line. Click any image to expand and explore.</p>
+              <a href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf" target="_blank" rel="noopener" download="Bharat-Almirah-Brochure.pdf" style="display: inline-block; background: #111; color: #fff; padding: 0.8rem 2rem; font-size: 0.85rem; font-weight: 700; letter-spacing: 1px; text-decoration: none; text-transform: uppercase;">Download Complete Brochure →</a>
+            </div>
+
+            <div class="gallery-grid">
+              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 1">
+                <img src="assets/images/brochure-shot-01.png" alt="Bharat Almirah model 1" style="width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease;"/>
+              </button>
+              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 2">
+                <img src="assets/images/brochure-shot-02.png" alt="Bharat Almirah model 2" style="width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease;"/>
+              </button>
+              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 3">
+                <img src="assets/images/brochure-shot-03.png" alt="Bharat Almirah model 3" style="width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease;"/>
+              </button>
+              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 4">
+                <img src="assets/images/brochure-shot-04.png" alt="Bharat Almirah model 4" style="width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease;"/>
+              </button>
+              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 5">
+                <img src="assets/images/brochure-shot-05.png" alt="Bharat Almirah model 5" style="width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease;"/>
+              </button>
+              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 6">
+                <img src="assets/images/brochure-shot-06.png" alt="Bharat Almirah model 6" style="width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease;"/>
+              </button>
+              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 7">
+                <img src="assets/images/brochure-shot-07.png" alt="Bharat Almirah model 7" style="width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease;"/>
+              </button>
+              <button class="gallery-item" type="button" aria-label="Open brochure screenshot 8">
+                <img src="assets/images/brochure-shot-08.png" alt="Bharat Almirah model 8" style="width: 100%; height: auto; display: block; box-shadow: 0 4px 20px rgba(0,0,0,0.06); transition: transform 0.3s ease;"/>
+              </button>
+            </div>
+
+            <!-- Mini CTA after gallery -->
+            <div style="margin-top: 2.5rem; background: var(--color-bg); border: 1px solid #e5e3dc; padding: 1.5rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+              <div>
+                <p style="font-weight: 700; color: #111; font-size: 1rem; margin: 0;">Like what you see?</p>
+                <p style="color: #666; font-size: 0.88rem; margin: 0.2rem 0 0;">Get a price quote or download the full brochure with all models and dimensions.</p>
+              </div>
+              <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                <a href="contact.html" style="display: inline-block; background: var(--color-primary); color: #fff; padding: 0.7rem 1.5rem; font-size: 0.85rem; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px;">Request Quote</a>
+                <a href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf" target="_blank" rel="noopener" download style="display: inline-block; background: #fff; color: #111; padding: 0.7rem 1.5rem; font-size: 0.85rem; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid #ddd;">↓ Brochure PDF</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── PRODUCT SPECS ─────────────────────────────────────── -->
+        <section class="fade-up" style="background: var(--color-bg); padding: 6rem 0;">
+          <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+              <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.8rem;">Model-wise Details</p>
+              <h2 style="font-family: 'Playfair Display', serif; font-size: 2.4rem; color: #111; font-weight: 400; margin-bottom: 1rem;">Technical <em>Specifications</em></h2>
+              <p style="color: #666; max-width: 550px; margin: 0 auto; font-size: 1rem;">Detailed dimensions and core features for each model in our lineup.</p>
+            </div>
+
+            <!-- Home Series -->
+            <div style="margin-bottom: 3rem;">
+              <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="height: 2px; flex: 1; background: #eee;"></div>
+                <span style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; font-weight: 700; color: var(--color-primary); white-space: nowrap;">Home & Residential</span>
+                <div style="height: 2px; flex: 1; background: #eee;"></div>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <article style="background: #fff; padding: 2rem; border-top: 4px solid var(--color-primary); box-shadow: 0 2px 15px rgba(0,0,0,0.03);">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem; color: #111;">Classic Model</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Size</span><span style="color: #555; font-size: 0.9rem;">78 × 33 × 19 inches</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Features</span><span style="color: #555; font-size: 0.9rem;">Border box, side + big locker, hanger rod, bangle rod</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Ideal for</span><span style="color: #555; font-size: 0.9rem;">Small families & budget buyers</span></div>
+                  </div>
+                </article>
+                <article style="background: #fff; padding: 2rem; border-top: 4px solid var(--color-primary); box-shadow: 0 2px 15px rgba(0,0,0,0.03);">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem; color: #111;">Galaxy 19</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Size</span><span style="color: #555; font-size: 0.9rem;">78 × 36 × 19 inches</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Features</span><span style="color: #555; font-size: 0.9rem;">Wider body than Classic, enhanced internal storage</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Ideal for</span><span style="color: #555; font-size: 0.9rem;">Medium families needing more space</span></div>
+                  </div>
+                </article>
+                <article style="background: #fff; padding: 2rem; border-top: 4px solid var(--color-primary); box-shadow: 0 2px 15px rgba(0,0,0,0.03);">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem; color: #111;">Galaxy Wardrobe</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Size</span><span style="color: #555; font-size: 0.9rem;">78 × 36 × 21 inches</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Features</span><span style="color: #555; font-size: 0.9rem;">Coat hanger, number lock system, adjustable legs</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Ideal for</span><span style="color: #555; font-size: 0.9rem;">Couples & modern bedroom setups</span></div>
+                  </div>
+                </article>
+                <article style="background: #fff; padding: 2rem; border-top: 4px solid var(--color-primary); box-shadow: 0 2px 15px rgba(0,0,0,0.03);">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem; color: #111;">Galaxy Partition / Ford</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Size</span><span style="color: #555; font-size: 0.9rem;">78 × 36 × 21 inches</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Features</span><span style="color: #555; font-size: 0.9rem;">Multi-section layout, side locker, number lock</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Ideal for</span><span style="color: #555; font-size: 0.9rem;">Users who need clear compartment separation</span></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Premium Series -->
+            <div style="margin-bottom: 3rem;">
+              <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="height: 2px; flex: 1; background: #eee;"></div>
+                <span style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; font-weight: 700; color: #333; white-space: nowrap;">Premium Series</span>
+                <div style="height: 2px; flex: 1; background: #eee;"></div>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <article style="background: #fff; padding: 2rem; border-top: 4px solid #333; box-shadow: 0 2px 15px rgba(0,0,0,0.03);">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem; color: #111;">Deluxe Series</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Size</span><span style="color: #555; font-size: 0.9rem;">78 × 42 × 21 inches</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Features</span><span style="color: #555; font-size: 0.9rem;">Premium mirror door, multiple drawers, big locker</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Ideal for</span><span style="color: #555; font-size: 0.9rem;">Premium households wanting luxury features</span></div>
+                  </div>
+                </article>
+                <article style="background: #fff; padding: 2rem; border-top: 4px solid #333; box-shadow: 0 2px 15px rgba(0,0,0,0.03);">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem; color: #111;">3-Door Series</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Size</span><span style="color: #555; font-size: 0.9rem;">78 × 48 × 21 inches</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Features</span><span style="color: #555; font-size: 0.9rem;">Massive 3-door layout, 2 big lockers, mirror, drawers</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Ideal for</span><span style="color: #555; font-size: 0.9rem;">Large families with high storage demands</span></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <!-- Office / Institutional -->
+            <div>
+              <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                <div style="height: 2px; flex: 1; background: #eee;"></div>
+                <span style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; font-weight: 700; color: #777; white-space: nowrap;">Office & Institutional</span>
+                <div style="height: 2px; flex: 1; background: #eee;"></div>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <article style="background: #fff; padding: 2rem; border-top: 4px solid #888; box-shadow: 0 2px 15px rgba(0,0,0,0.03);">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem; color: #111;">Office Locker</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Size</span><span style="color: #555; font-size: 0.9rem;">78 × 33/36 × 19 inches</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Features</span><span style="color: #555; font-size: 0.9rem;">5 shelves, big locker — perfect for document storage</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Ideal for</span><span style="color: #555; font-size: 0.9rem;">Offices, schools, banks &amp; government</span></div>
+                  </div>
+                </article>
+                <article style="background: #fff; padding: 2rem; border-top: 4px solid #888; box-shadow: 0 2px 15px rgba(0,0,0,0.03);">
+                  <h3 style="font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 1rem; color: #111;">Office Mini</h3>
+                  <div style="display: flex; flex-direction: column; gap: 0.6rem;">
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Size</span><span style="color: #555; font-size: 0.9rem;">48 × 33 × 19 inches</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Features</span><span style="color: #555; font-size: 0.9rem;">Compact under-desk design, 3 shelves</span></div>
+                    <div style="display: flex; gap: 0.5rem;"><span style="font-weight: 700; color: #111; font-size: 0.85rem; min-width: 70px;">Ideal for</span><span style="color: #555; font-size: 0.9rem;">Cabins, small offices &amp; reception areas</span></div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── ENQUIRY CTA ────────────────────────────────────────── -->
+        <section style="background: #111; padding: 6rem 1rem; text-align: center;">
+          <div class="container" style="max-width: 700px; margin: 0 auto;">
+            <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 1rem;">Ready to Order?</p>
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.4rem; font-weight: 400; color: #fff; margin-bottom: 1.5rem; line-height: 1.3;">Get a Quote for Your Requirement</h2>
+            <p style="color: #999; font-size: 1.05rem; line-height: 1.7; margin-bottom: 2.5rem;">Whether it's one unit or a thousand — we give every order the same precision and care. Contact us for bulk pricing or custom configurations.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+              <a href="contact.html" style="display: inline-block; background: var(--color-primary); color: #fff; padding: 1rem 2.2rem; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.05em; text-decoration: none; text-transform: uppercase;">Request a Quote</a>
+              <a href="https://wa.me/919936512207" target="_blank" rel="noopener" style="display: inline-block; background: #25D366; color: #fff; padding: 1rem 2.2rem; font-size: 0.95rem; font-weight: 700; letter-spacing: 0.05em; text-decoration: none; text-transform: uppercase;">WhatsApp Us</a>
             </div>
           </div>
         </section>
 
       </main>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-grid">
-            <div class="footer-brand">
-              <div class="footer-brand-title">Bharat Almirah</div>
-              <p class="footer-brand-text">
-                हर भारतीय की पसंद - भारत अलमारी. Durable steel storage solutions
-                for homes, offices, schools, hostels, and institutions.
-              </p>
-              <div class="footer-meta">ISO 9001:2015 Certified | Pan India Supply</div>
-            </div>
+      <footer style="background: #f5f0e8; border-top: 3px solid #cd091f;">
+        <div class="container" style="padding-top: 3.5rem; padding-bottom: 0;">
+
+          <div style="display: grid; grid-template-columns: 1.8fr 1fr 1.4fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(0,0,0,0.12);">
+
+            <!-- Brand -->
             <div>
-              <div class="footer-heading">Quick Links</div>
-              <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="products.html">Products</a>
-                <a href="contact.html">Contact</a>
-                <a href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf" target="_blank" rel="noopener" download="Bharat-Almirah-Brochure.pdf">Download Brochure PDF</a>
+              <div style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #111; font-weight: 700; margin-bottom: 0.2rem;">Bharat <span style="color: #cd091f;">Almirah</span></div>
+              <div style="font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase; color: #cd091f; font-weight: 700; margin-bottom: 1.2rem;">ISO 9001:2015 Certified</div>
+              <p style="font-size: 0.9rem; color: #444; line-height: 1.75; max-width: 260px; margin-bottom: 1.6rem;">Premium steel almirahs for homes, offices, and institutions. Pan India supply since 1995.</p>
+              <a href="https://wa.me/919936512207" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.4rem; background: #25D366; color: #fff; padding: 0.6rem 1.2rem; font-size: 0.78rem; font-weight: 700; text-decoration: none; letter-spacing: 1px; text-transform: uppercase;">&#128172; WhatsApp</a>
+            </div>
+
+            <!-- Links -->
+            <div>
+              <div style="font-size: 0.65rem; letter-spacing: 2.5px; text-transform: uppercase; color: #555555; font-weight: 700; margin-bottom: 1.2rem;">Navigate</div>
+              <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                <a href="index.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Home</a>
+                <a href="about.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Who We Are</a>
+                <a href="products.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Our Products</a>
+                <a href="dealership.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Get Dealership</a>
+                <a href="contact.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Contact Us</a>
+                <a href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf" target="_blank" rel="noopener" download style="color: #cd091f; text-decoration: none; font-size: 0.9rem; font-weight: 600;" onmouseover="this.style.color='#ff3344'" onmouseout="this.style.color='#cd091f'">&#8595; Download Brochure</a>
               </div>
             </div>
+
+            <!-- Contact -->
             <div>
-              <div class="footer-heading">Contact</div>
-              <div class="footer-contact">
-                <span><strong>Call:</strong> <a href="tel:+919956999978">+91 99569 99978</a></span>
-                <span><strong>WhatsApp:</strong> <a href="https://wa.me/919936512207" target="_blank" rel="noopener">+91 99365 12207</a></span>
-                <span><strong>Email:</strong> <a href="mailto:natiquel91@gmail.com">natiquel91@gmail.com</a></span>
-                <span><strong>Hours:</strong> Mon-Sat, 9:00 AM - 7:00 PM</span>
+              <div style="font-size: 0.65rem; letter-spacing: 2.5px; text-transform: uppercase; color: #555555; font-weight: 700; margin-bottom: 1.2rem;">Reach Us</div>
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div>
+                  <a href="tel:+919956999978" style="display: block; color: #111; font-weight: 700; font-size: 1rem; text-decoration: none;">+91 99569 99978</a>
+                  <span style="font-size: 0.75rem; color: #666666;">Sales &amp; Orders</span>
+                </div>
+                <div>
+                  <a href="https://wa.me/919936512207" target="_blank" rel="noopener" style="display: block; color: #111; font-weight: 700; font-size: 1rem; text-decoration: none;">+91 99365 12207</a>
+                  <span style="font-size: 0.75rem; color: #666666;">WhatsApp</span>
+                </div>
+                <div>
+                  <a href="mailto:natiquel91@gmail.com" style="display: block; color: #222222; font-size: 0.88rem; text-decoration: none;">natiquel91@gmail.com</a>
+                  <span style="font-size: 0.75rem; color: #666666;">Azamgarh, UP &nbsp;&mdash;&nbsp; Mon&ndash;Sat, 9AM&ndash;7PM</span>
+                </div>
               </div>
             </div>
+
           </div>
-          <div class="footer-bottom">
-            <span>© 2026 Bharat Almirah. All rights reserved.</span>
-            <div class="footer-legal">
-              <a href="contact.html">Support</a>
-              <a href="about.html">Company</a>
-            </div>
-            <div class="footer-social">
-              <span class="footer-social-label">Connect</span>
-              <a href="https://wa.me/919936512207" aria-label="Chat on WhatsApp" class="footer-social-link">WhatsApp</a>
-              <a href="tel:+919936512207" aria-label="Call Bharat Almirah" class="footer-social-link">Call</a>
-              <a href="mailto:natiquel91@gmail.com" aria-label="Email Bharat Almirah" class="footer-social-link">Email</a>
-            </div>
+
+          <!-- Bottom bar -->
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.2rem 0;">
+            <span style="font-size: 0.78rem; color: #555;">&copy; 2026 Bharat Almirah. All rights reserved.</span>
+            <span style="font-size: 0.78rem; color: #555;">ISO 9001:2015 &nbsp;|&nbsp; Pan India Supply</span>
           </div>
+
         </div>
       </footer>
     </div>

@@ -49,7 +49,7 @@
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -59,283 +59,301 @@
   </head>
   <body class="has-mobile-cta">
     <div class="page">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="top-bar-inner">
+            <span>✨ Premium & Elegant Designs</span>
+            <span>⭐ 10-Year Assured Warranty</span>
+            <span>🛡️ Heavy-Duty Steel Built</span>
+            <span>🤝 50,000+ Happy Customers</span>
+          </div>
+        </div>
+      </div>
+
       <header class="navbar">
-        <div class="container navbar-inner">
-          <a
-            href="index.html"
-            class="brand"
-          >
-            <span class="brand-logo">BA</span>
-            <span class="brand-text">
-              <span class="brand-title">Bharat Almirah</span>
-              <span class="brand-subtitle">हर भारतीय की पसंद - भारत अलमारी</span>
+        <div class="container navbar-inner" style="justify-content: center;">
+          <nav class="nav-links" aria-label="Primary Left" style="flex: 1; justify-content: flex-end; padding-right: 2rem;">
+            <a href="index.html">HOME</a>
+            <a href="about.html" class="nav-active">WHO WE ARE</a>
+            <a href="products.html">OUR PRODUCTS</a>
+          </nav>
+
+          <a href="index.html" class="brand" style="flex: 0 0 auto; text-align: center; justify-content: center;">
+            <span class="brand-text" style="display: flex; flex-direction: column; align-items: center; gap: 2px;">
+              <span style="font-family: 'Playfair Display', serif; font-size: clamp(0.95rem, 3.8vw, 1.6rem); font-weight: 700; line-height: 1; white-space: nowrap;"><span style="color: var(--color-primary);">Bharat</span> <span style="color: var(--color-text);">Almirah</span></span>
+              <span style="text-transform: uppercase; font-size: 0.52rem; letter-spacing: 0.18em; color: var(--color-primary); font-weight: 700;">ISO 9001:2015 Certified</span>
             </span>
           </a>
 
-          <nav class="nav-links" aria-label="Primary">
-            <a href="index.html">Home</a>
-            <a
-              href="about.html"
-              class="nav-active"
-              >About</a
-            >
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact</a>
-            <a
-              href="https://wa.me/919936512207"
-              class="nav-whatsapp"
-              target="_blank"
-              rel="noopener"
-              >WhatsApp Inquiry</a
-            >
+          <nav class="nav-links" aria-label="Primary Right" style="flex: 1; justify-content: flex-start; padding-left: 2rem; align-items: center;">
+            <a href="contact.html">CONTACT US</a>
+            <a href="dealership.html" style="background-color: #cd091f; color: #fff; padding: 0.6rem 1.4rem; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; margin-left: 1rem; border: 1px solid #cd091f; text-decoration: none; display: inline-block;">GET DEALERSHIP</a>
           </nav>
 
-          <button
-            class="nav-toggle"
-            type="button"
-            aria-label="Toggle navigation"
-          >
+          <button class="nav-toggle" type="button" aria-label="Toggle navigation">
             <span></span>
           </button>
         </div>
       </header>
 
       <main>
-        <section class="hero">
-          <div class="container split-grid">
-            <div>
-              <div class="badge">
-                <span class="badge-dot"></span>
-                <span>About Bharat Almirah</span>
-              </div>
-              <h1 class="content-title">Traditional strength. Modern design. Practical functionality.</h1>
-              <p class="content-body">
-                Bharat Almirah is a trusted manufacturer of strong, durable, and
-                stylish steel almirahs designed for modern homes, offices, and
-                commercial environments.
-              </p>
-              <p class="content-body">
-                We combine reliability, security, and aesthetic refinement to
-                deliver storage solutions that stay useful and dependable for
-                years.
-              </p>
-              <div class="stat-row">
-                <div class="stat">
-                  <strong>Trusted quality</strong>
-                  <span>engineered for daily performance</span>
-                </div>
-                <div class="stat">
-                  <strong>First choice focus</strong>
-                  <span>for durable storage solutions</span>
-                </div>
-              </div>
+
+        <!-- ─── HERO ─────────────────────────────────────────────── -->
+        <section style="position: relative; min-height: 92vh; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden;">
+
+          <!-- Background image -->
+          <img src="assets/images/almirah1.jpg" alt=""
+            style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: 0;" />
+
+          <!-- Dark gradient overlay -->
+          <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,8,6,0.65) 0%, rgba(10,8,6,0.55) 60%, rgba(10,8,6,0.85) 100%); z-index: 1;"></div>
+
+          <!-- Red top border -->
+          <div style="position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--color-primary); z-index: 2;"></div>
+
+          <!-- Content -->
+          <div class="container" style="position: relative; z-index: 2; text-align: center; padding: 6rem 1.5rem 8rem;">
+
+            <!-- Eyebrow -->
+            <div class="hero-fade" data-delay="1" style="display: inline-flex; align-items: center; gap: 0.6rem; border: 1px solid rgba(255,255,255,0.35); padding: 0.4rem 1.2rem; margin-bottom: 2rem;">
+              <span style="width: 5px; height: 5px; background: var(--color-primary); border-radius: 50%; display: inline-block;"></span>
+              <span style="font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 3.5px; color: rgba(255,255,255,0.85);">Est. 1995 &nbsp;·&nbsp; ISO 9001:2015 Certified</span>
             </div>
-            <div>
-              <div class="image-stack">
-                <div class="image-stack-main">
-                  <img
-                    src="/assets/images/almirah1.jpg"
-                    alt="Bharat Almirah steel wardrobe installation"
-                  />
-                </div>
-                <div class="image-stack-tag">
-                  <span class="image-stack-tag-dot"></span>
-                  <span>Dedicated support for every order</span>
-                </div>
-              </div>
+
+            <!-- Main heading -->
+            <h1 class="hero-fade" data-delay="2" style="font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 7vw, 5.5rem); font-weight: 700; color: #fff; line-height: 1.1; margin-bottom: 1.2rem; letter-spacing: -1px;">
+              About <span style="color: var(--color-primary); font-style: italic;">Bharat</span> Almirah
+            </h1>
+
+            <!-- Red accent line -->
+            <div class="hero-fade" data-delay="3" style="width: 56px; height: 3px; background: var(--color-primary); margin: 0 auto 1.8rem;"></div>
+
+            <!-- Subtitle -->
+            <p class="hero-fade" data-delay="4" style="font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255,255,255,0.8); line-height: 1.75; max-width: 620px; margin: 0 auto 2.8rem; font-weight: 300;">
+              A trusted manufacturer of premium steel storage solutions — crafted with precision, built to last generations, delivered Pan India.
+            </p>
+
+            <!-- CTAs -->
+            <div class="hero-fade" data-delay="5" style="display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+              <a href="products.html"
+                style="background: var(--color-primary); color: #fff; padding: 1rem 2.2rem; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; text-decoration: none; transition: background 0.2s;"
+                onmouseover="this.style.background='#a8071a'" onmouseout="this.style.background='#cd091f'">
+                Our Products
+              </a>
+              <a href="contact.html"
+                style="border: 1.5px solid rgba(255,255,255,0.6); color: #fff; padding: 1rem 2.2rem; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; text-decoration: none; background: transparent; transition: all 0.2s;"
+                onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background='transparent'">
+                Get In Touch
+              </a>
             </div>
+          </div>
+
+          <!-- Scroll cue -->
+          <div style="position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; text-align: center;">
+            <div style="width: 1px; height: 40px; background: rgba(255,255,255,0.3); margin: 0 auto;"></div>
           </div>
         </section>
 
-        <section>
+
+        <!-- ─── STATS STRIP ──────────────────────────────────────── -->
+        <section class="fade-up" style="background: #111; padding: 3rem 0;">
           <div class="container">
-            <div class="section-heading">
-              <h2>Mission &amp; Vision</h2>
-              <p>
-                Bharat Almirah is built around clear purpose and long-term
-                customer trust.
-              </p>
-            </div>
-            <div class="values-grid">
-              <article class="value-card">
-                <h3 class="value-title">Mission</h3>
-                <p>
-                  To manufacture strong, secure, and long-lasting almirahs that
-                  meet everyday storage needs while maintaining high
-                  functionality and visual appeal.
-                </p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Vision</h3>
-                <p>
-                  To become the most trusted almirah brand known for strength,
-                  quality, and innovation, and to remain the first choice for
-                  customers seeking durable storage solutions.
-                </p>
-              </article>
-              <article class="value-card">
-                <h3 class="value-title">Brand Positioning</h3>
-                <p>
-                  Bharat Almirah is not just storage. It represents security,
-                  better organization, and long-term durability for Indian homes
-                  and offices.
-                </p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container split-grid">
-            <div>
-              <div class="badge">
-                <span class="badge-dot"></span>
-                <span>Commitment to quality</span>
-              </div>
-              <h2 class="content-title">Storage solutions engineered to last.</h2>
-              <p class="content-body">
-                Our manufacturing process combines carefully selected steel
-                thicknesses, precision fabrication, and quality surface treatments
-                to ensure long‑term performance. Each almirah is checked for
-                alignment, door operation, locking strength, and finish before
-                dispatch.
-              </p>
-              <p class="content-body">
-                Whether it is a single wardrobe or hundreds of units for a new
-                hostel, we maintain the same standards of quality, packaging, and
-                service.
-              </p>
-              <div class="pill-row">
-                <span class="pill">High‑grade CRCA steel</span>
-                <span class="pill">Quality locks &amp; hardware</span>
-                <span class="pill">Careful powder coating</span>
-                <span class="pill">Structured QC checks</span>
-              </div>
-            </div>
-            <div>
-              <div class="image-stack">
-                <div class="image-stack-main">
-                  <img
-                    src="/assets/images/r&d.jpg"
-                    alt="Quality checks on almirah manufacturing"
-                  />
-                </div>
-                <div class="image-stack-tag">
-                  <span class="image-stack-tag-dot"></span>
-                  <span>Tested for strength &amp; stability</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <div class="section-heading">
-              <h2>Who we serve</h2>
-              <p>
-                Bharat Almirah supports a wide range of customers and projects
-                across India.
-              </p>
-            </div>
-            <div class="customers-row">
-              <p>
-                From individual families upgrading their home storage to
-                institutions planning large‑scale locker installations, we adapt
-                our solutions to fit different use‑cases and volumes.
-              </p>
-              <div class="customers-list">
-                <span class="customers-pill">Households &amp; apartments</span>
-                <span class="customers-pill">Corporate offices</span>
-                <span class="customers-pill">Schools &amp; colleges</span>
-                <span class="customers-pill">Hostels &amp; PGs</span>
-                <span class="customers-pill">Coaching institutes</span>
-                <span class="customers-pill">Retail shops &amp; warehouses</span>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section>
-          <div class="container">
-            <div class="cta-strip">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 2rem; text-align: center;">
               <div>
-                <h2 class="cta-heading">Planning a new project?</h2>
-                <p class="cta-body">
-                  Share your storage requirements—number of users, room layouts,
-                  or building plans—and we will recommend a mix of almirahs and
-                  lockers that keeps your space organized.
-                </p>
+                <div style="font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--color-primary); font-weight: 700; line-height: 1;" data-counter="10" data-suffix="+">10+</div>
+                <div style="color: #aaa; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; margin-top: 0.5rem;">Years of Trust</div>
               </div>
-              <div class="cta-actions">
-                <a
-                  href="contact.html"
-                  class="btn btn-primary btn-full"
-                  >Talk to our team</a
-                >
-                <a
-                  href="products.html"
-                  class="btn btn-outline-light btn-full"
-                  >Browse product categories</a
-                >
-                <a
-                  href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf"
-                  class="btn btn-outline-light btn-full"
-                  target="_blank"
-                  rel="noopener"
-                  download="Bharat-Almirah-Brochure.pdf"
-                  >Download brochure PDF</a
-                >
+              <div>
+                <div style="font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--color-primary); font-weight: 700; line-height: 1;" data-counter="50" data-suffix="K+">50K+</div>
+                <div style="color: #aaa; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; margin-top: 0.5rem;">Happy Customers</div>
+              </div>
+              <div>
+                <div style="font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--color-primary); font-weight: 700; line-height: 1;" data-counter="500" data-suffix="+">500+</div>
+                <div style="color: #aaa; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; margin-top: 0.5rem;">Dealer Partners</div>
+              </div>
+              <div>
+                <div style="font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--color-primary); font-weight: 700; line-height: 1;" data-counter="5" data-suffix="+">5+</div>
+                <div style="color: #aaa; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; margin-top: 0.5rem;">States Covered</div>
+              </div>
+              <div>
+                <div style="font-family: 'Playfair Display', serif; font-size: 2.8rem; color: var(--color-primary); font-weight: 700; line-height: 1;" data-counter="10" data-suffix="yr">10yr</div>
+                <div style="color: #aaa; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 2px; margin-top: 0.5rem;">Warranty</div>
               </div>
             </div>
           </div>
         </section>
+
+        <!-- ─── FOUR PILLARS ──────────────────────────────────────── -->
+        <section class="fade-up" style="background: var(--color-bg); padding: 6rem 0;">
+          <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+              <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.8rem;">What defines us</p>
+              <h2 style="font-family: 'Playfair Display', serif; font-size: 2.4rem; color: #111; font-weight: 400; margin: 0;">The Four Pillars of <em>Our Brand</em></h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+              <div class="fade-up hover-lift" data-delay="1" class="fade-up hover-lift" data-delay="3" style="background: #fff; padding: 2.5rem 1.8rem; text-align: center; border-bottom: 3px solid var(--color-primary); box-shadow: 0 2px 20px rgba(0,0,0,0.04);">
+                <div style="width: 56px; height: 56px; background: #fdf0f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; font-size: 1.5rem;">🛡️</div>
+                <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #111; margin-bottom: 0.7rem;">Unshakable Security</h4>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.65;">Heavy-gauge structure and advanced locks to ensure total protection of your belongings.</p>
+              </div>
+              <div class="fade-up hover-lift" data-delay="2" style="background: #fff; padding: 2.5rem 1.8rem; text-align: center; border-bottom: 3px solid #555; box-shadow: 0 2px 20px rgba(0,0,0,0.04);">
+                <div style="width: 56px; height: 56px; background: #f5f5f5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; font-size: 1.5rem;">✨</div>
+                <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #111; margin-bottom: 0.7rem;">Elegant Finishes</h4>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.65;">Precision powder-coating that resists scratching and fading — decade after decade.</p>
+              </div>
+              <div class="fade-up hover-lift" data-delay="3" style="background: #fff; padding: 2.5rem 1.8rem; text-align: center; border-bottom: 3px solid var(--color-primary); box-shadow: 0 2px 20px rgba(0,0,0,0.04);">
+                <div style="width: 56px; height: 56px; background: #fdf0f2; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; font-size: 1.5rem;">⚙️</div>
+                <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #111; margin-bottom: 0.7rem;">Smart Engineering</h4>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.65;">Modular shelving and innovative compartment designs tailored to your exact storage needs.</p>
+              </div>
+              <div class="fade-up hover-lift" data-delay="2" class="fade-up hover-lift" data-delay="4" style="background: #fff; padding: 2.5rem 1.8rem; text-align: center; border-bottom: 3px solid #555; box-shadow: 0 2px 20px rgba(0,0,0,0.04);">
+                <div style="width: 56px; height: 56px; background: #f5f5f5; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.2rem; font-size: 1.5rem;">🤝</div>
+                <h4 style="font-family: 'Playfair Display', serif; font-size: 1.2rem; color: #111; margin-bottom: 0.7rem;">Client First</h4>
+                <p style="color: #666; font-size: 0.9rem; line-height: 1.65;">A dedicated support team ensuring your satisfaction from the very first inquiry to final setup.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── PRECISION ENGINEERING ─────────────────────────────── -->
+        <section class="fade-up" style="background: #fff; padding: 6rem 0;">
+          <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+              <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.8rem;">How we build</p>
+              <h2 style="font-family: 'Playfair Display', serif; font-size: 2.4rem; color: #111; font-weight: 400; margin: 0;"><em>Precision Engineering</em> &amp; <span style="color: var(--color-primary);">Flawless Execution</span></h2>
+              <div style="width: 50px; height: 2px; background: #111; margin: 1.5rem auto 0;"></div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
+              <div>
+                <img src="assets/images/home.jpeg" alt="Bharat Almirah manufacturing floor" style="width: 100%; height: auto; display: block; box-shadow: 0 15px 50px rgba(0,0,0,0.1);" />
+              </div>
+              <div>
+                <p style="color: #555; font-size: 1.05rem; line-height: 1.85; margin-bottom: 1.5rem;">
+                  Our state-of-the-art facilities are equipped with the latest fabrication technology — from automated sheet metal presses to advanced powder coating lines. Fully segregated divisions for procurement, customization, structural testing, and logistics ensure seamless workflow and absolute precision.
+                </p>
+                <p style="color: #555; font-size: 1.05rem; line-height: 1.85; margin-bottom: 2rem;">
+                  Before any product leaves our floor, it undergoes exhaustive inspection by our quality control team. From weld strength and structural alignment to paint finish consistency, every facet is evaluated. Our philosophy is simple: <strong>perfection is the only acceptable baseline.</strong>
+                </p>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.7rem;">
+                  <span style="border: 1px dashed #bbb; padding: 0.5rem 1rem; font-size: 0.85rem; color: #555; border-radius: 40px;">High-grade CRCA steel</span>
+                  <span style="border: 1px dashed #bbb; padding: 0.5rem 1rem; font-size: 0.85rem; color: #555; border-radius: 40px;">Quality locks &amp; hardware</span>
+                  <span style="border: 1px dashed #bbb; padding: 0.5rem 1rem; font-size: 0.85rem; color: #555; border-radius: 40px;">Careful powder coating</span>
+                  <span style="border: 1px dashed #bbb; padding: 0.5rem 1rem; font-size: 0.85rem; color: #555; border-radius: 40px;">Structured QC checks</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── CRAFTSMANSHIP & NETWORK ───────────────────────────── -->
+        <section class="fade-up" style="background: var(--color-bg); padding: 6rem 0;">
+          <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem;">
+              <div style="background: #fff; padding: 3rem; border-top: 4px solid var(--color-primary);">
+                <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; font-weight: 700; color: var(--color-primary); margin-bottom: 1rem;">Our People</p>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1.2rem; color: #111;">Dedicated Craftsmanship</h3>
+                <p style="color: #666; line-height: 1.75; font-size: 1rem;">
+                  At the heart of Bharat Almirah is a team of master craftsmen, industrial designers, and customer specialists. We blend modern machinery with artisanal inspection — understanding every client's unique requirements to deliver perfectly tailored storage solutions.
+                </p>
+              </div>
+              <div style="background: #fff; padding: 3rem; border-top: 4px solid #333;">
+                <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.7rem; font-weight: 700; color: #555; margin-bottom: 1rem;">Our Reach</p>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-bottom: 1.2rem; color: #111;">A Dominant Regional Presence</h3>
+                <p style="color: #666; line-height: 1.75; font-size: 1rem;">
+                  With a deeply rooted distribution network across Uttar Pradesh, Madhya Pradesh, and Bihar, we guarantee swift availability. We partner with verified dealerships to bring our quality directly to major hubs and local towns, alongside responsive after-sales support.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── DARK CTA BANNER ───────────────────────────────────── -->
+        <section style="background: #111; padding: 6rem 1rem; text-align: center;">
+          <div class="container" style="max-width: 750px; margin: 0 auto;">
+            <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 1rem;">Become a Partner</p>
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 400; color: #fff; margin-bottom: 1.5rem; line-height: 1.3;">Bring Bharat Almirah to Your City</h2>
+            <p style="color: #999; font-size: 1.1rem; line-height: 1.7; margin-bottom: 2.5rem;">
+              Join a growing network of trusted dealerships across Northern and Central India. We offer competitive margins, strong brand support, and exclusive territory rights.
+            </p>
+            <a href="dealership.html" style="display: inline-block; background: var(--color-primary); color: #fff; padding: 1rem 2.5rem; font-size: 1rem; font-weight: 700; letter-spacing: 0.05em; text-decoration: none; text-transform: uppercase;">Apply for Dealership</a>
+          </div>
+        </section>
+
+        <!-- ─── WHO WE SERVE ──────────────────────────────────────── -->
+        <section style="background: var(--color-bg); padding: 5rem 0;">
+          <div class="container" style="text-align: center;">
+            <p style="text-transform: uppercase; letter-spacing: 3px; font-size: 0.75rem; font-weight: 700; color: var(--color-primary); margin-bottom: 0.8rem;">Our Customers</p>
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.3rem; color: #111; font-weight: 400; margin-bottom: 1rem;">Who We Serve</h2>
+            <p style="color: #666; font-size: 1.05rem; line-height: 1.7; max-width: 600px; margin: 0 auto 3rem;">
+              From families upgrading their home storage to institutions planning large-scale locker installations — we adapt our solutions to every scale and use-case.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem;">
+              <span style="background: #111; color: #fff; padding: 0.75rem 1.6rem; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;">Households &amp; Apartments</span>
+              <span style="background: #111; color: #fff; padding: 0.75rem 1.6rem; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;">Corporate Offices</span>
+              <span style="background: #111; color: #fff; padding: 0.75rem 1.6rem; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;">Schools &amp; Colleges</span>
+              <span style="background: #111; color: #fff; padding: 0.75rem 1.6rem; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;">Hostels &amp; PGs</span>
+              <span style="background: #111; color: #fff; padding: 0.75rem 1.6rem; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;">Banks &amp; Government</span>
+              <span style="background: #111; color: #fff; padding: 0.75rem 1.6rem; font-size: 0.85rem; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600;">Retail &amp; Warehouses</span>
+            </div>
+          </div>
+        </section>
+
       </main>
 
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-grid">
-            <div class="footer-brand">
-              <div class="footer-brand-title">Bharat Almirah</div>
-              <p class="footer-brand-text">
-                हर भारतीय की पसंद - भारत अलमारी. Durable steel storage solutions
-                for homes, offices, schools, hostels, and institutions.
-              </p>
-              <div class="footer-meta">ISO 9001:2015 Certified | Pan India Supply</div>
-            </div>
+      <footer style="background: #f5f0e8; border-top: 3px solid #cd091f;">
+        <div class="container" style="padding-top: 3.5rem; padding-bottom: 0;">
+
+          <div style="display: grid; grid-template-columns: 1.8fr 1fr 1.4fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(0,0,0,0.12);">
+
+            <!-- Brand -->
             <div>
-              <div class="footer-heading">Quick Links</div>
-              <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="products.html">Products</a>
-                <a href="contact.html">Contact</a>
-                <a href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf" target="_blank" rel="noopener" download="Bharat-Almirah-Brochure.pdf">Download Brochure PDF</a>
+              <div style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #111; font-weight: 700; margin-bottom: 0.2rem;">Bharat <span style="color: #cd091f;">Almirah</span></div>
+              <div style="font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase; color: #cd091f; font-weight: 700; margin-bottom: 1.2rem;">ISO 9001:2015 Certified</div>
+              <p style="font-size: 0.9rem; color: #444; line-height: 1.75; max-width: 260px; margin-bottom: 1.6rem;">Premium steel almirahs for homes, offices, and institutions. Pan India supply since 1995.</p>
+              <a href="https://wa.me/919936512207" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 0.4rem; background: #25D366; color: #fff; padding: 0.6rem 1.2rem; font-size: 0.78rem; font-weight: 700; text-decoration: none; letter-spacing: 1px; text-transform: uppercase;">&#128172; WhatsApp</a>
+            </div>
+
+            <!-- Links -->
+            <div>
+              <div style="font-size: 0.65rem; letter-spacing: 2.5px; text-transform: uppercase; color: #555555; font-weight: 700; margin-bottom: 1.2rem;">Navigate</div>
+              <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                <a href="index.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Home</a>
+                <a href="about.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Who We Are</a>
+                <a href="products.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Our Products</a>
+                <a href="dealership.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Get Dealership</a>
+                <a href="contact.html" style="color: #333; text-decoration: none; font-size: 0.9rem;" onmouseover="this.style.color='#cd091f'" onmouseout="this.style.color='#333'">Contact Us</a>
+                <a href="assets/BHARAT%20ALMIRAH%20FINAL%20BROCHURE.pdf" target="_blank" rel="noopener" download style="color: #cd091f; text-decoration: none; font-size: 0.9rem; font-weight: 600;" onmouseover="this.style.color='#ff3344'" onmouseout="this.style.color='#cd091f'">&#8595; Download Brochure</a>
               </div>
             </div>
+
+            <!-- Contact -->
             <div>
-              <div class="footer-heading">Contact</div>
-              <div class="footer-contact">
-                <span><strong>Call:</strong> <a href="tel:+919956999978">+91 99569 99978</a></span>
-                <span><strong>WhatsApp:</strong> <a href="https://wa.me/919936512207" target="_blank" rel="noopener">+91 99365 12207</a></span>
-                <span><strong>Email:</strong> <a href="mailto:natiquel91@gmail.com">natiquel91@gmail.com</a></span>
-                <span><strong>Hours:</strong> Mon-Sat, 9:00 AM - 7:00 PM</span>
+              <div style="font-size: 0.65rem; letter-spacing: 2.5px; text-transform: uppercase; color: #555555; font-weight: 700; margin-bottom: 1.2rem;">Reach Us</div>
+              <div style="display: flex; flex-direction: column; gap: 1rem;">
+                <div>
+                  <a href="tel:+919956999978" style="display: block; color: #111; font-weight: 700; font-size: 1rem; text-decoration: none;">+91 99569 99978</a>
+                  <span style="font-size: 0.75rem; color: #666666;">Sales &amp; Orders</span>
+                </div>
+                <div>
+                  <a href="https://wa.me/919936512207" target="_blank" rel="noopener" style="display: block; color: #111; font-weight: 700; font-size: 1rem; text-decoration: none;">+91 99365 12207</a>
+                  <span style="font-size: 0.75rem; color: #666666;">WhatsApp</span>
+                </div>
+                <div>
+                  <a href="mailto:natiquel91@gmail.com" style="display: block; color: #222222; font-size: 0.88rem; text-decoration: none;">natiquel91@gmail.com</a>
+                  <span style="font-size: 0.75rem; color: #666666;">Azamgarh, UP &nbsp;&mdash;&nbsp; Mon&ndash;Sat, 9AM&ndash;7PM</span>
+                </div>
               </div>
             </div>
+
           </div>
-          <div class="footer-bottom">
-            <span>© 2026 Bharat Almirah. All rights reserved.</span>
-            <div class="footer-legal">
-              <a href="contact.html">Support</a>
-              <a href="about.html">Company</a>
-            </div>
-            <div class="footer-social">
-              <span class="footer-social-label">Connect</span>
-              <a href="https://wa.me/919936512207" aria-label="Chat on WhatsApp" class="footer-social-link">WhatsApp</a>
-              <a href="tel:+919936512207" aria-label="Call Bharat Almirah" class="footer-social-link">Call</a>
-              <a href="mailto:natiquel91@gmail.com" aria-label="Email Bharat Almirah" class="footer-social-link">Email</a>
-            </div>
+
+          <!-- Bottom bar -->
+          <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1.2rem 0;">
+            <span style="font-size: 0.78rem; color: #555;">&copy; 2026 Bharat Almirah. All rights reserved.</span>
+            <span style="font-size: 0.78rem; color: #555;">ISO 9001:2015 &nbsp;|&nbsp; Pan India Supply</span>
           </div>
+
         </div>
       </footer>
     </div>
