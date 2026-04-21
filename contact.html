@@ -149,8 +149,8 @@
 
         <!-- ─── FORM + INFO SPLIT ─────────────────────────────────── -->
         <section class="fade-up" style="background: var(--color-bg); padding: 6rem 0;">
-          <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: start;">
+          <div class="container" style="max-width: 1000px;">
+            <div class="resp-grid-split" style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 4rem; align-items: start;">
 
               <!-- Left: Info -->
               <div>
@@ -194,12 +194,12 @@
               </div>
 
               <!-- Right: Form -->
-              <div style="background: #fff; padding: 3.5rem; border: 1px solid #eae8e1; box-shadow: 0 10px 40px rgba(0,0,0,0.03);">
+              <div style="background: #fff; padding: 3.5rem; box-shadow: 0 10px 40px rgba(0,0,0,0.05);">
                 <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #111; margin-bottom: 0.5rem;">Get a Quick Quote</h3>
                 <p style="color: #888; font-size: 0.9rem; margin-bottom: 2rem;">We'll get back to you within one business day.</p>
 
                 <form action="#" method="post" style="display: grid; gap: 1.3rem;">
-                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem;">
+                  <div class="resp-form-row" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem;">
                     <div>
                       <label for="name" style="display: block; font-weight: 600; font-size: 0.85rem; color: #333; margin-bottom: 0.4rem;">Full Name *</label>
                       <input type="text" id="name" name="name" placeholder="Your name" required style="width: 100%; border: 1px solid #ddd; padding: 0.8rem 1rem; font-size: 0.95rem; outline: none; transition: border 0.2s; box-sizing: border-box;" />
@@ -266,7 +266,7 @@
       <footer style="background: #f5f0e8; border-top: 3px solid #cd091f;">
         <div class="container" style="padding-top: 3.5rem; padding-bottom: 0;">
 
-          <div style="display: grid; grid-template-columns: 1.8fr 1fr 1.4fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(0,0,0,0.12);">
+          <div class="resp-footer" style="display: grid; grid-template-columns: 1.8fr 1fr 1.4fr; gap: 4rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(0,0,0,0.12);">
 
             <!-- Brand -->
             <div>
