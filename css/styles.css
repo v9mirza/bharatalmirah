@@ -2079,3 +2079,58 @@ article[style*="border-top"] {
     gap: 2.5rem !important;
   }
 }
+
+/* ─── Extra small screen fixes (≤ 420px) ──────────────────────── */
+@media (max-width: 420px) {
+  /* Hero headline: prevent overflow on very small phones */
+  h1 {
+    font-size: clamp(2rem, 10vw, 3rem) !important;
+    letter-spacing: -0.5px !important;
+  }
+
+  /* Why Choose Us: single column on tiny phones */
+  .resp-why-us {
+    grid-template-columns: 1fr !important;
+  }
+  .why-us-item {
+    border-right: none !important;
+    border-bottom: 1px solid #eee !important;
+  }
+  .why-us-item:last-child {
+    border-bottom: none !important;
+  }
+
+  /* Testimonials: single column */
+  .testimonial-grid-custom {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Product/category cards: full height on tiny phones */
+  .cat-card { height: 260px !important; }
+
+  /* CTA buttons: stack vertically & full width */
+  #inquiry .container > div[style*="flex"] {
+    flex-direction: column !important;
+  }
+  #inquiry a {
+    width: 100% !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Specs grid: single column */
+  .resp-grid-split {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Top bar: hide on very small screens to save space */
+  .top-bar {
+    display: none !important;
+  }
+
+  /* Mobile hero padding adjustment */
+  .hero-content-wrapper {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
