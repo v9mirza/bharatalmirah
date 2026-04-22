@@ -1965,8 +1965,11 @@ article[style*="border-top"] {
 .cat-card:hover img { transform: scale(1.07); }
 .cat-card .cat-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.25) 50%, rgba(0,0,0,0.05) 100%); transition: background 0.4s ease; }
 .cat-card:hover .cat-overlay { background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0.1) 100%); }
-.cat-card .cat-text { position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem; }
-.cat-card .cat-arrow { display: inline-block; opacity: 0; transform: translateX(-8px); transition: opacity 0.3s ease, transform 0.3s ease; font-size: 0.8rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 2px; margin-top: 0.6rem; }
+.cat-card .cat-text { position: absolute; bottom: 0; left: 0; right: 0; padding: 2rem; transform: translateY(10px); transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.cat-card:hover .cat-text { transform: translateY(0); }
+.cat-card .cat-subtitle { opacity: 0; transform: translateY(6px); transition: opacity 0.35s ease 0.1s, transform 0.35s ease 0.1s; }
+.cat-card:hover .cat-subtitle { opacity: 1; transform: translateY(0); }
+.cat-card .cat-arrow { display: inline-block; opacity: 0; transform: translateX(-8px); transition: opacity 0.3s ease 0.15s, transform 0.3s ease 0.15s; font-size: 0.8rem; font-weight: 700; color: var(--color-primary); text-transform: uppercase; letter-spacing: 2px; margin-top: 0.6rem; }
 .cat-card:hover .cat-arrow { opacity: 1; transform: translateX(0); }
 .cat-card .cat-bar { position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--color-primary); }
 
