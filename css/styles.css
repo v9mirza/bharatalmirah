@@ -1915,22 +1915,8 @@ section {
   section h2 {
     font-size: 1.8rem !important;
   }
-  /* Stack inline form grids */
-  div[style*="grid-template-columns: 1fr 1fr"] {
-    grid-template-columns: 1fr !important;
-  }
-  div[style*="grid-template-columns: 1fr 1.5fr"] {
-    grid-template-columns: 1fr !important;
-  }
-  div[style*="grid-template-columns: 1fr 1.5fr; gap: 4rem"] {
-    grid-template-columns: 1fr !important;
-    gap: 2rem !important;
-  }
-  /* Footer grid */
-  div[style*="grid-template-columns: 1.8fr 1fr 1.4fr"] {
-    grid-template-columns: 1fr !important;
-    gap: 2rem !important;
-  }
+
+
   /* Stats strips */
   div[style*="repeat(auto-fit, minmax(150px"] {
     grid-template-columns: repeat(2, 1fr) !important;
@@ -1943,11 +1929,7 @@ section {
 }
 
 @media (max-width: 768px) {
-  /* Dealership & Contact: split layout columns */
-  div[style*="grid-template-columns: 1fr 1.5fr; gap: 4rem"] {
-    grid-template-columns: 1fr !important;
-    gap: 2.5rem !important;
-  }
+
   /* How it works / benefits grids */
   div[style*="grid-template-columns: repeat(auto-fit, minmax(220px"] {
     grid-template-columns: 1fr 1fr !important;
@@ -1960,11 +1942,7 @@ section {
     border-left: none !important;
     border-right: none !important;
   }
-  /* Footer grid 3-col → 1-col */
-  div[style*="grid-template-columns: 1.8fr 1fr 1.4fr"] {
-    grid-template-columns: 1fr 1fr !important;
-    gap: 2rem !important;
-  }
+
   /* About page stats strip */
   div[style*="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)"] {
     grid-template-columns: repeat(2, 1fr) !important;
